@@ -83,7 +83,7 @@ namespace Hindalco
 
                 GlobelObject.SelectedPosition = selectedPosition;
 
-                MessageBox.Show("Selected Position: " + GlobelObject.SelectedPosition);
+               // MessageBox.Show("Selected Position: " + GlobelObject.SelectedPosition);
 
                 NavigationService?.Navigate(new Training_Content_Video(GlobelObject.SelectedPosition, GlobelObject.SelectedLanguage));
             }
