@@ -1,0 +1,51 @@
+﻿<Page x:Class="Hindalco.Add_Video_PDF"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Hindalco"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920" Loaded="Page_Loaded_1"
+      Title="Add_Video_PDF">
+
+    <Grid Background="#F3F3F3">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,290,0,0" Height="425" Width="430">
+
+            <TextBlock Text="📂 Add Video / PDF" FontSize="24" FontWeight="Bold" Foreground="DarkBlue" Margin="0,10,0,20"/>
+
+
+
+            <!-- Language Selection -->
+            <TextBlock Text="🌍 Select Language:" FontSize="18" FontWeight="Bold" Margin="10,10,0,0"/>
+            <ComboBox x:Name="cmbLanguage" Width="300" FontSize="16" SelectionChanged="cmbLanguage_SelectionChanged">
+                <ComboBoxItem Content="English"/>
+                <ComboBoxItem Content="Hindi"/>
+                <ComboBoxItem Content="Marathi"/>
+            </ComboBox>
+            <!-- Position Selection -->
+            <!-- Position Selection (Dynamic) -->
+            <TextBlock Text="🏢 Select Position:" FontSize="18" FontWeight="Bold" Margin="10,10,0,0"/>
+            <ComboBox x:Name="cmbPosition" Width="300" FontSize="16"/>
+
+            <!-- Position ComboBox -->
+
+            <!-- Select File Button -->
+            <Button x:Name="btnSelectFile" Style="{StaticResource NumButton}"  Content="📁 Select File" Width="300" Height="50"
+                    Background="DodgerBlue" Foreground="White" FontSize="18"
+                    Click="btnSelectFile_Click"/>
+
+            <!-- Selected File Display -->
+            <TextBlock x:Name="txtFilePath" FontSize="16" Foreground="Gray" TextAlignment="Center" Text="📂 No File Selected"/>
+
+            <!-- Upload Button -->
+            <Button x:Name="btnUpload" Content="⬆ Upload File" Width="300" Height="50"
+                    Background="Green" Foreground="White" FontSize="18"
+                    Click="btnUpload_Click" IsEnabled="False"/>
+
+            <!-- Back Button -->
+            <Button x:Name="BtnBack" Style="{StaticResource NumButton}"  Content="⬅ Back" Width="200" Height="50"
+                    Background="Tomato" Foreground="White" FontSize="18"
+                    Click="BtnBack_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,47 @@
+﻿<Page x:Class="Hindalco.QuestionPaper"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Hindalco"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920" Loaded="Page_Loaded"
+      Title="QuestionPaper">
+
+    <Grid>
+        <Button x:Name="btn_Submit" Style="{StaticResource btn2}" Visibility="Hidden" Content="Submit"  BorderBrush="Gray" Background="DodgerBlue"  HorizontalAlignment="Right" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="400" Margin="0,886,6,0" Height="100" Click="Btn_Submit_Click"  />
+        <Button x:Name="btn_Next" Style="{StaticResource btn2}" Visibility="Hidden" Content="Next"  BorderBrush="Gray" Background="DodgerBlue" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top"  Width="406" Margin="1514,886,0,0" Height="100" Click="Btn_Next_Click"  />
+        <Label x:Name="LblError" Content="" FontSize="30" Background="Transparent" Foreground="Red" FontWeight="DemiBold" FontStyle="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="284,995,0,0" VerticalAlignment="Top" Height="48" Width="892"/>
+        <Button x:Name="btn_Q1" Content="1" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="96"  Margin="106,81,0,0" Height="94" Click="Btn_Q1_Click" />
+        <Button x:Name="btn_Q2" Content="2" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="94"  Margin="221,81,0,0" Height="94" Click="Btn_Q2_Click" />
+        <Button x:Name="btn_Q3" Content="3" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="93"  Margin="337,81,0,0" Height="94" Click="Btn_Q3_Click" />
+        <Button x:Name="btn_Q4" Content="4" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="94"  Margin="450,81,0,0" Height="94" Click="Btn_Q4_Click" />
+        <Button x:Name="btn_Q5" Content="5" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="94"  Margin="561,81,0,0" Height="94" Click="Btn_Q5_Click" />
+        <Button x:Name="btn_Q6" Content="6" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="102"  Margin="673,81,0,0" Height="94" Click="Btn_Q6_Click" />
+        <Button x:Name="btn_Q7" Content="7" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="100"  Margin="803,81,0,0" Height="94" Click="Btn_Q7_Click" />
+        <Button x:Name="btn_Q8" Content="8" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="102"  Margin="917,81,0,0" Height="94" Click="Btn_Q8_Click" />
+        <Button x:Name="btn_Q9" Content="9" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="102"  Margin="1034,81,0,0" Height="94" Click="Btn_Q9_Click" />
+        <Button x:Name="btn_Q10" Content="10" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="104"  Margin="1151,81,0,0" Height="94" Click="Btn_Q10_Click" />
+        <Button x:Name="btn_Q11" Content="11" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="102"  Margin="1269,81,0,0" Height="94" Click="btn_Q11_Click" />
+        <Button x:Name="btn_Q12" Content="12" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="102"  Margin="1388,81,0,0" Height="94" Click="btn_Q12_Click" />
+        <Button x:Name="btn_Q13" Content="13" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="102"  Margin="1505,81,0,0" Height="94" Click="btn_Q13_Click" />
+        <Button x:Name="btn_Q14" Content="14" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="103"  Margin="1621,81,0,0" Height="94" Click="btn_Q14_Click" />
+        <Button x:Name="btn_Q15" Content="15" Background="Gray" Visibility="Visible" HorizontalAlignment="Left" BorderThickness="3" FontSize="40" VerticalAlignment="Top" Width="103"  Margin="1739,81,0,0" Height="94" Click="btn_Q15_Click" />
+
+
+        <Viewbox x:Name="ViewA" Height="40" Visibility="Visible" Margin="110,539,486,501">
+            <RadioButton x:Name="OptionA" Visibility="Visible" Foreground="Black" Content="" GroupName="Group1" Checked="OptionA_Checked" HorizontalAlignment="Left" VerticalAlignment="Top" Width="562"/>
+        </Viewbox>
+        <Viewbox x:Name="ViewB" Height="40" Visibility="Visible" Margin="110,651,486,389">
+            <RadioButton x:Name="OptionB" Visibility="Visible" Foreground="Black" Content="" GroupName="Group1" Checked="OptionB_Checked" HorizontalAlignment="Left" VerticalAlignment="Top" Width="525"/>
+        </Viewbox>
+        <Viewbox x:Name="ViewC" Height="40" Visibility="Visible" Margin="110,763,486,277">
+            <RadioButton x:Name="OptionC" Visibility="Visible" Foreground="Black" Content="" GroupName="Group1" Checked="OptionC_Checked" HorizontalAlignment="Left" VerticalAlignment="Top" Width="521"/>
+        </Viewbox>
+        <Viewbox x:Name="ViewD" Height="40" Visibility="Visible" Margin="113,879,486,161">
+            <RadioButton x:Name="OptionD" Foreground="Black" Visibility="Visible" Content="" GroupName="Group1" Checked="OptionD_Checked" HorizontalAlignment="Left" VerticalAlignment="Top" Width="521"/>
+        </Viewbox>
+        <Label x:Name="lbl_Ques1" FontWeight="Bold" Content="" HorizontalAlignment="Left" FontSize="40" Foreground="Black" Background="SkyBlue" VerticalAlignment="Top" Margin="72,302,0,0" Width="1798" Height="103"/>
+        <Label x:Name="LblKeyboard" BorderBrush="Gray" Width="804" Visibility="Hidden" HorizontalAlignment="Left" Margin="1100,517,0,286" BorderThickness="1" RenderTransformOrigin="0.5,0.5" />
+    </Grid>
+</Page>

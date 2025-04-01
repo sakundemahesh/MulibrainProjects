@@ -1,0 +1,68 @@
+﻿<Page x:Class="Hindalco.Exam_Result"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Exam Result" Height="1080" Width="1920" Background="LightBlue" Loaded="Page_Loaded">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="480" Width="500">
+
+            <!-- Title -->
+            <TextBlock Text="📊 Exam Result" FontSize="32" FontWeight="Bold" Foreground="DarkBlue" 
+                       HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+            <!-- Get Pass ID -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Get Pass ID: " FontWeight="Bold"/>
+                <TextBlock x:Name="txtPassID" FontSize="18" Foreground="Black"/>
+            </StackPanel>
+
+            <!-- Language & Position -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Language Selected: " FontWeight="Bold"/>
+                <TextBlock x:Name="txtLanguage" FontSize="18" Foreground="Black"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Position Selected: " FontWeight="Bold"/>
+                <TextBlock x:Name="txtPosition" FontSize="18" Foreground="Black"/>
+            </StackPanel>
+
+            <!-- Training Data -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Training Videos Watched: " FontWeight="Bold"/>
+                <TextBlock x:Name="txtVideosWatched" FontSize="18" Foreground="Black"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="PDFs Viewed: " FontWeight="Bold"/>
+                <TextBlock x:Name="txtPDFsViewed" FontSize="18" Foreground="Black"/>
+            </StackPanel>
+
+            <!-- Score & Percentage -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Total Score: " FontWeight="Bold"/>
+                <TextBlock x:Name="txtScore" FontSize="22" Foreground="Blue"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Percentage: " FontWeight="Bold"/>
+                <TextBlock x:Name="txtPercentage" FontSize="22" Foreground="Blue"/>
+            </StackPanel>
+
+            <!-- Pass & Valid Date -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Pass Date: " FontWeight="Bold"/>
+                <TextBlock x:Name="txtPassDate" FontSize="18" Foreground="Black"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Valid Till: " FontWeight="Bold"/>
+                <TextBlock x:Name="txtValidTill" FontSize="18" Foreground="Black"/>
+            </StackPanel>
+
+            <!-- User Answers -->
+           
+            <Button x:Name="btnHome" Content="Home" Click="btnHome_Click" Width="150" Height="40" Background="Red" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</Page>
